@@ -7,5 +7,5 @@ description: >-
   A Jekyll blog using HTML instead of Markdown
 
 # Build settings
-permalink: pretty
+# permalink: pretty
 future: true
