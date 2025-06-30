@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Templating in Jekyll | HTML Blog</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/">HTML Blog</a></h1>
+      <nav class="site-nav">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/blog.html">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">HTML Templating in Jekyll</h1>
+    <p class="post-meta">
+      <time datetime="2025-06-30T20:00:00+05:30">
+        June 30, 2025
+      </time>
+      
+        • <span class="post-author">Saumy1905</span>
+      
+    </p>
+  </header>
+
+  <div class="post-content">
+    <p>In this post, we'll explore how to use HTML templates effectively in Jekyll.</p>
+
+<h2>Understanding Jekyll's Template System</h2>
+
+<p>Jekyll uses the Liquid templating language, which allows you to:</p>
+
+<ul>
+  <li>Use variables: <code>{{ page.title }}</code></li>
+  <li>Apply filters: <code>{{ page.date | date: '%B %d, %Y' }}</code></li>
+  <li>Use control flow tags: <code>{% if condition %}...{% endif %}</code></li>
+  <li>Loop through data: <code>{% for item in collection %}...{% endfor %}</code></li>
+</ul>
+
+<h2>Creating Reusable Components</h2>
+
+<p>One of the key benefits of Jekyll is the ability to create reusable components using <code>_includes</code>:</p>
+
+<pre><code>{% include header.html %}
+{% include sidebar.html %}
+{% include footer.html %}</code></pre>
+
+<p>This allows you to maintain a consistent structure across your site while keeping your code DRY (Don't Repeat Yourself).</p>
+
+<h2>Layouts vs. Includes</h2>
+
+<p>In Jekyll:</p>
+
+<ul>
+  <li><strong>Layouts</strong> define the overall structure of your pages</li>
+  <li><strong>Includes</strong> are reusable components that can be inserted into layouts or pages</li>
+</ul>
+
+<p>By combining these effectively, you can create a flexible and maintainable site structure.</p>
+  </div>
+
+  
+    <div class="post-tags">
+      <strong>Tags:</strong>
+      
+        <span class="tag">jekyll</span>
+      
+        <span class="tag">html</span>
+      
+        <span class="tag">liquid</span>
+      
+        <span class="tag">templates</span>
+      
+    </div>
+  
+</article>
+
+<div class="post-navigation">
+  
+    <a class="prev" href="/2025/06/30/welcome-to-html-blog.html">&laquo; Welcome to My HTML Blog</a>
+  
+  
+  
+</div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 HTML Blog</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

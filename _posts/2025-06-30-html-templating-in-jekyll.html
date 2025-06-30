@@ -1,0 +1,42 @@
+---
+layout: post
+title: "HTML Templating in Jekyll"
+date: 2025-06-30 14:30:00 +0000
+author: Saumy1905
+excerpt: Learn how to use HTML templates effectively in Jekyll.
+tags: [jekyll, html, liquid, templates]
+---
+
+<p>In this post, we'll explore how to use HTML templates effectively in Jekyll.</p>
+
+<h2>Understanding Jekyll's Template System</h2>
+
+<p>Jekyll uses the Liquid templating language, which allows you to:</p>
+
+<ul>
+  <li>Use variables: <code>{{ "{{ page.title " }}}}</code></li>
+  <li>Apply filters: <code>{{ "{{ page.date | date: '%B %d, %Y' " }}}}</code></li>
+  <li>Use control flow tags: <code>{% raw %}{% if condition %}...{% endif %}{% endraw %}</code></li>
+  <li>Loop through data: <code>{% raw %}{% for item in collection %}...{% endfor %}{% endraw %}</code></li>
+</ul>
+
+<h2>Creating Reusable Components</h2>
+
+<p>One of the key benefits of Jekyll is the ability to create reusable components using <code>_includes</code>:</p>
+
+<pre><code>{% raw %}{% include header.html %}
+{% include sidebar.html %}
+{% include footer.html %}{% endraw %}</code></pre>
+
+<p>This allows you to maintain a consistent structure across your site while keeping your code DRY (Don't Repeat Yourself).</p>
+
+<h2>Layouts vs. Includes</h2>
+
+<p>In Jekyll:</p>
+
+<ul>
+  <li><strong>Layouts</strong> define the overall structure of your pages</li>
+  <li><strong>Includes</strong> are reusable components that can be inserted into layouts or pages</li>
+</ul>
+
+<p>By combining these effectively, you can create a flexible and maintainable site structure.</p>

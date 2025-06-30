@@ -1,0 +1,11 @@
+# Site settings
+url: "https://praxian1905.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/html-blog" # the subpath of your site, e.g. /blog
+title: HTML Blog # the name of your site, e.g. ACME Corp.
+email: praxian1905@gmail.com
+description: >-
+  A Jekyll blog using HTML instead of Markdown
+
+# Build settings
+permalink: pretty
+future: true

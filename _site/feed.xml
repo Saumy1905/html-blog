@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-30T19:04:34+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">HTML Blog</title><subtitle>A Jekyll blog using HTML instead of Markdown</subtitle><entry><title type="html">HTML Templating in Jekyll</title><link href="http://localhost:4000/2025/06/30/html-templating-in-jekyll.html" rel="alternate" type="text/html" title="HTML Templating in Jekyll" /><published>2025-06-30T20:00:00+05:30</published><updated>2025-06-30T20:00:00+05:30</updated><id>http://localhost:4000/2025/06/30/html-templating-in-jekyll</id><content type="html" xml:base="http://localhost:4000/2025/06/30/html-templating-in-jekyll.html"><![CDATA[<p>In this post, we'll explore how to use HTML templates effectively in Jekyll.</p>
+
+<h2>Understanding Jekyll's Template System</h2>
+
+<p>Jekyll uses the Liquid templating language, which allows you to:</p>
+
+<ul>
+  <li>Use variables: <code>{{ page.title }}</code></li>
+  <li>Apply filters: <code>{{ page.date | date: '%B %d, %Y' }}</code></li>
+  <li>Use control flow tags: <code>{% if condition %}...{% endif %}</code></li>
+  <li>Loop through data: <code>{% for item in collection %}...{% endfor %}</code></li>
+</ul>
+
+<h2>Creating Reusable Components</h2>
+
+<p>One of the key benefits of Jekyll is the ability to create reusable components using <code>_includes</code>:</p>
+
+<pre><code>{% include header.html %}
+{% include sidebar.html %}
+{% include footer.html %}</code></pre>
+
+<p>This allows you to maintain a consistent structure across your site while keeping your code DRY (Don't Repeat Yourself).</p>
+
+<h2>Layouts vs. Includes</h2>
+
+<p>In Jekyll:</p>
+
+<ul>
+  <li><strong>Layouts</strong> define the overall structure of your pages</li>
+  <li><strong>Includes</strong> are reusable components that can be inserted into layouts or pages</li>
+</ul>
+
+<p>By combining these effectively, you can create a flexible and maintainable site structure.</p>]]></content><author><name>Saumy1905</name></author><category term="jekyll" /><category term="html" /><category term="liquid" /><category term="templates" /><summary type="html"><![CDATA[Learn how to use HTML templates effectively in Jekyll.]]></summary></entry><entry><title type="html">Welcome to My HTML Blog</title><link href="http://localhost:4000/2025/06/30/welcome-to-html-blog.html" rel="alternate" type="text/html" title="Welcome to My HTML Blog" /><published>2025-06-30T15:30:00+05:30</published><updated>2025-06-30T15:30:00+05:30</updated><id>http://localhost:4000/2025/06/30/welcome-to-html-blog</id><content type="html" xml:base="http://localhost:4000/2025/06/30/welcome-to-html-blog.html"><![CDATA[<p>Welcome to my first blog post using HTML instead of Markdown in Jekyll!</p>
+
+<h2>Why HTML Instead of Markdown?</h2>
+
+<p>While Markdown is great for simple content, HTML gives us more control over the structure and presentation of our content. This is especially useful for:</p>
+
+<ul>
+  <li>Complex layouts</li>
+  <li>Custom styling within content</li>
+  <li>Interactive elements</li>
+  <li>Special formatting needs</li>
+</ul>
+
+<p>Using HTML with Jekyll's templating system (Liquid) gives us the best of both worlds: the simplicity of a static site generator with the flexibility of hand-coded HTML.</p>
+
+<h2>What's Next?</h2>
+
+<p>In the coming posts, I'll explore more advanced Jekyll features and how to implement them using HTML instead of Markdown.</p>]]></content><author><name>Saumy1905</name></author><category term="jekyll" /><category term="html" /><category term="beginner" /><summary type="html"><![CDATA[This is my first post on my HTML-based Jekyll blog.]]></summary></entry></feed>

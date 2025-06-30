@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <h2>Welcome to My HTML Blog</h2>
+  <p>A Jekyll blog using HTML instead of Markdown</p>
+</section>
+
+<section class="featured-posts">
+  <h2>Recent Posts</h2>
+  <div class="post-grid">
+    {% for post in site.posts limit:3 %}
+      <div class="post-card">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <div class="post-excerpt">{{ post.excerpt }}</div>
+        <a href="{{ post.url | relative_url }}" class="read-more">Read more</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
